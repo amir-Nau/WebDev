@@ -1,5 +1,5 @@
 body {
-  background-color: #000000;
+  background-color: #21201e;
 
 }
 
@@ -117,6 +117,6 @@ body > .container {
 .block-header div {
   padding-top: 10px;
 }
-h3 ,p{
-  color: #ffd480;
+h3,p, h1{
+  color: #ffe819;
 }
