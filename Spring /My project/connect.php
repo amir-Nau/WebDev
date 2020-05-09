@@ -5,10 +5,10 @@
  
  if (!empty($username)){
 if (!empty($password)){
-$host = "localhost";
-$dbusername = "root";
-$dbpassword = "root";
-$dbname = "Test";
+$host = "shareddb-t.hosting.stackcp.net";
+$dbusername = "Shop_admin-313331159b";
+$dbpassword = "160411581Ab";
+$dbname = "Shop_admin-313331159b";
 // Create connection
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 if (mysqli_connect_error()){
@@ -16,7 +16,7 @@ die('Connect Error ('. mysqli_connect_errno() .') '
 . mysqli_connect_error());
 }
 else{
-$sql = "INSERT INTO account (username, password)
+$sql = "INSERT INTO User (username, password)
 values ('$username','$password')";
 if ($conn->query($sql)){
 echo "New record is inserted sucessfully";
